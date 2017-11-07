@@ -1,3 +1,6 @@
 language: python
 python: "3.5"
-script: pytest
+install: pip install coveralls
+#script: pytest
+script: coverage run --source pytest
+after_success: coveralls
