@@ -5,7 +5,7 @@ import readline
 #import colored
 import sys
 import termcolor
-from termcolor import colored, cprint
+#from termcolor import colored, cprint
 
 operators = {
     '+': operator.add,
