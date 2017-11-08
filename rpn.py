@@ -2,10 +2,8 @@
 
 import operator
 import readline
-#import colored
 import sys
-#import termcolor
-from termcolor import colored
+from termcolor import colored, cprint
 
 operators = {
     '+': operator.add,
@@ -36,8 +34,10 @@ def main():
     while True:
         result = calculate(input("rpn calc> "))
         if (result < 0):
-            cprint('Result: ', 'green', 'on_red') 
-        print("Result: ", result)
+            cprint('Result:', 'blue', 'on_yellow')
+            cprint(result, 'red')
+        else: 
+            print('Result: ', result)
 
 if __name__ == '__main__':
     main()
