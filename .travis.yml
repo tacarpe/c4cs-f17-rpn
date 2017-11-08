@@ -5,5 +5,5 @@ install:
   - pip install termcolor
 #  - python termcolor-1.1.0/setup.py install
 #script: pytest
-script: coverage run -m test
+script: coverage run -m unittest
 after_success: coveralls
