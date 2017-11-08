@@ -1,6 +1,8 @@
 language: python
 python: "3.5"
-install: pip install coveralls
+install:
+  - pip install coveralls
+  - pip install termcolor-1.1.0
 #script: pytest
 script: coverage run test_rpn.py test
 after_success: coveralls
