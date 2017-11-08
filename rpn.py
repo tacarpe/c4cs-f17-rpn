@@ -3,7 +3,7 @@
 import operator
 import readline
 #import colored
-from termcolor import colored
+from termcolor import colored, cprint
 
 operators = {
     '+': operator.add,
@@ -34,7 +34,7 @@ def main():
     while True:
         result = calculate(input("rpn calc> "))
         if (result < 0):
-            print colored("Result: ", 'red) 
+            cprint('Result: ', 'green', 'on_red') 
         print("Result: ", result)
 
 if __name__ == '__main__':
