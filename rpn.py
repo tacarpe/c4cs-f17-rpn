@@ -3,6 +3,7 @@
 import operator
 import readline
 #import colored
+sudo pip install termcolor
 import sys
 #import termcolor
 from termcolor import colored, cprint
